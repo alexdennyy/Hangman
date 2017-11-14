@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hangman</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src = "script.js"></script>
+</head>
+<body onload="populateLetters()">
+<p>
+<div id="play"><button id="playButton" onclick="startGame()">Press to start</button></div>
+<div id="difficulty">
+    <p>
+<select id="selectDifficulty">
+    <option value="easy">Easy</option>
+    <option value="medium">Medium</option>
+    <option value="hard">Hard</option>
+
+</select>
+    </p>
+</div>
+
+    </p>
+<p>
+<div id="guessBox" class="hideOnLoad">
+    <select id="selectLetter">
+    </select>
+<button id="guessButton" onclick="checkGuess()">Guess</button>
+</div>
+</p>
+<p><div id="guessesLeft" class="hideOnLoad"></div></p>
+<p>
+    <div id="word" class="hideOnLoad"></div>
+</p>
+<p>
+    <div id="prevGuesses" class="hideOnLoad">Letters Guessed</div>
+</p>
+<p>
+<div id="guessArray" class="hideOnLoad"></div>
+</p>
+<p>
+<div id="endBox"></div>
+</p>
+<div id="imageDiv">
+<p id="image">
+<img id="hangman" src="">
+</p>
+</div>
+<p>
+</p>
+
+</body>
+</html>
